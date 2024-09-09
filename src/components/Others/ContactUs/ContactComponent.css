@@ -1,0 +1,229 @@
+.contactcomponent-container {
+ 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    padding: 100px 140px;
+  }
+  .contactcomponent-left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    color: var(--color-violet);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    gap: 30px;
+  }
+  .contactcomponent-left h1 {
+    font-size: 50px;
+  }
+  .contactcomponent-left p {
+    line-height: 1.5;
+  }
+  
+  .contact-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-input-container input[type="text"] {
+    padding: 10px 15px;
+    background-color: #fbf8ff;
+    border: 1px solid #389ab3;
+    outline: none;
+  }
+  .contact-input-container input[type="text"]:focus {
+    border: 1px solid #f1705a;
+    color: #f1705a;
+  }
+  .contact-input-container input[type="text"]:focus::placeholder {
+    color: transparent;
+  }
+  .contact-input-container input::placeholder {
+    color: var(--color-violet);
+  }
+  .contact-input-container textarea {
+    height: 100px;
+    padding: 10px 15px;
+    resize: vertical;
+    background-color: #fbf8ff;
+    border: 1px solid #389ab3;
+    outline: none;
+  }
+  .contact-input-container textarea::placeholder {
+    color: var(--color-violet);
+  }
+  .contact-input-container textarea:focus{
+      border: 1px solid #f1705a;
+  }
+  .contact-input-container textarea:focus::placeholder{
+      color: transparent;
+  }
+  
+  
+  
+  .contact-input-container button{
+      border-radius: 0;
+      height: 40px;
+  }
+  .contact-input-container button:hover{
+      background-color: var(--color-green);
+  }
+  
+  .contactcomponent-right {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      color: var(--color-violet);
+      gap: 30px;
+    }
+    .contactcomponent-right h2{
+      font-size: 40px;
+      
+      
+    }
+    .contactcomponent-right .purata{
+     
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+     
+    }
+  
+    .contactcomponent-right .purata-box{
+      
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contactcomponent-right .purata-box .icon-box{
+      background-color: var(--color-violet);
+      height: 60px;
+      width: 60px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      flex-shrink: 0;
+    }
+    .contactcomponent-right .purata-box .likha-box{
+      text-align: justify;
+      line-height: 1.5;
+      padding-right: 20px;
+    }
+    .contactcomponent-right .purata-box .likha-box h3{
+      font-size: 22px;
+      display: inline-block;
+    }
+    .contactcomponent-right .purata-box .likha-box p{
+      margin-top: 3px;
+    }
+  
+  
+    .contactcomponent-right .network{
+    
+      height: 60%;
+    
+    }
+    .contactcomponent-right .network .social-media-container{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .contactcomponent-right .network
+    .social-media-container
+    .social-media
+    {
+      background-color: #D7CAE0;
+      width: 30px;
+      height: 30px;
+      color: var(--color-violet);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .contactcomponent-right .network
+    .social-media-container
+    .social-media:hover
+    {
+        transform: translate(0, -10px);
+    }
+  
+  
+    /* ---------------------For Mobile Devices ------------------- */
+  @media (max-width:600px){
+    .contactcomponent-container {
+    
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 70px 40px !important;
+    }
+  
+    .contactcomponent-left h1 {
+      font-size: 30px;
+    }
+    .contactcomponent-left p {
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    
+    .contactcomponent-right {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-violet);
+        gap: 40px;
+        
+      }
+      .contactcomponent-right h2{
+        font-size: 30px;
+        
+        
+      }
+      .contactcomponent-right .purata{
+      
+        display: flex;
+        flex-direction: column;
+       
+      }
+    
+      .contactcomponent-right .purata-box{
+        
+    flex-direction: column;
+      }
+  
+      .contactcomponent-right .purata-box .likha-box{
+       
+        text-align: center;
+        line-height: 1.5;
+        padding-right: 0;
+      }
+      .contactcomponent-right .purata-box .likha-box h3{
+        
+        font-size: 18px;
+        
+      }
+      .contactcomponent-right .purata-box .likha-box p{
+        font-size: 14px;
+      }
+    
+    
+      .contactcomponent-right .network .social-media-container{
+       
+        justify-content: center;
+       
+      }
+      
+  }

@@ -1,0 +1,16 @@
+.curved-ruler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #0080E5;
+  border-top-left-radius: 50% 40%;
+  border-bottom-left-radius: 50%;
+  clip-path: polygon(100% 0, 100% 100%, 50% 100%, 50% 0);
+}
+
+.bgHr {
+  background-image: url('../../../../assets/HRStratigy/HRBanner.png');
+
+}

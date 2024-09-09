@@ -1,0 +1,67 @@
+.mission-banner{
+    background-image: url("https://lifeinnovior.org/wp-content/uploads/2022/11/Lifeinnovior-Quality-care-from-quality-experts.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.ourvalue_container{
+    
+    height: auto;
+  
+    background-image: url("https://lifeinnovior.org/wp-content/uploads/2022/11/Lifeinnovior-Quality-care-from-quality-experts.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% center;
+    position: relative;
+    padding: 0 140px;
+}
+.ourvalue_menu{
+    
+    background: linear-gradient(to right, #000F1A 0%, #000F1A 50%, #0077D5 100%);
+    width: 40%;
+height: 100%;
+z-index: 2;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+padding: 30px 30px;
+
+}
+.ourvalue_menu h1{
+color: white;
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.ourvalue_menu h4{
+    color: white;
+}
+
+/* ----------------------For mobile device-------------- */
+
+@media (max-width:600px){
+    .ourvalue_container{
+        height: auto;
+        width: 100%;
+        padding: 0 !important;
+   
+      /* margin-bottom: 450px; */
+    }
+    .ourvalue_menu{
+    
+    width: 100%;
+    padding: 100px 40px;
+    align-items: center;
+    }
+    .ourvalue_menu h1{
+    font-size: 30px;
+    text-align: center;
+    }
+}
+

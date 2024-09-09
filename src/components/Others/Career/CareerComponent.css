@@ -1,0 +1,77 @@
+.careercomponent-container .shob{
+    margin: 70px 0px;
+    width: 100%;
+    display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 20px;
+   font-size: 18px;
+   
+}
+.careercomponent-container .shob .shob-card{
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: #00457B;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+
+}
+.careercomponent-container .shob .shob-card:hover{
+    color: #007DE0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    
+}
+.careercomponent-container .shob .shob-card span{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.careercomponent-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.careercomponent-container .loding{
+    padding: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 50%;
+    background-color: #00B4D8;
+}
+.careercomponent-container .loding:hover{
+
+    background-color: #00457B;
+}
+
+/* ---------------------For Mobile Devices ------------------- */
+@media (max-width:600px){
+    .careercomponent-container .shob{
+        
+        margin: 70px 0px;
+        width: 100%;
+        display: flex;
+       flex-direction: column ;
+       grid-gap: 20px;
+    }
+    .careercomponent-container {
+        height: auto;
+        padding: 70px 40px !important;
+    }
+    .careercomponent-container p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+}

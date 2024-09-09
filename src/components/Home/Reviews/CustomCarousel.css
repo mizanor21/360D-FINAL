@@ -1,0 +1,4 @@
+/* CustomCarousel.css */
+.carousel-slide {
+    transition: transform 0.5s ease-in-out;
+}

@@ -1,0 +1,45 @@
+.goal {
+    background-image: url(../../../assets/goal/bgGoal.png);
+    background-repeat: no-repeat;
+    background-color: #efefef;
+}
+
+.bg {
+    position: relative;
+    z-index: 10;
+}
+
+
+.bg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vision::before {
+    background-image: url(../../../assets/goal/green.png);
+    background-size: cover;
+
+}
+
+.values::before {
+    background-image: url(../../../assets/goal/orange.png);
+    background-size: cover;
+}
+
+.mission::before {
+    background-image: url(../../../assets/goal/blue.png);
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+
+    .vision::before,
+    .values::before,
+    .mission::before {
+        display: none;
+    }
+}

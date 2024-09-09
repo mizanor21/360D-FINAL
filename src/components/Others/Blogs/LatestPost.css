@@ -1,0 +1,152 @@
+.latestpost-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  .latestpost-container h3 {
+    font-size: 30px;
+    color:    linear-gradient(to right, #000F1A 0%, #000F1A 50%, #0077D5 100%);;
+    padding: 30px;
+  }
+  .latestpost-container .post-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .latestpost-container .post-container .post {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .latestpost-container .post-container .post:hover .post-details p {
+    color: var(--color-green);
+  }
+  .latestpost-container .post-container .post .post-image {
+    width: 200px;
+    height: 60px;
+  }
+  .latestpost-container .post-container .post .post-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .latestpost-container .post-container .post .post-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .latestpost-container .post-container .post .post-details p {
+    color:    linear-gradient(to right, #000F1A 0%, #000F1A 50%, #0077D5 100%);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .latestpost-container .post-container .post .post-details .post-date {
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    color: #8f8f8f;
+  }
+  
+  .latestpost-container .Category-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 30px 30px 30px;
+  }
+  .latestpost-container .Category-container .cate {
+    display: flex;
+    color:    linear-gradient(to right, #000F1A 0%, #000F1A 50%, #0077D5 100%);;
+    font-weight: 600;
+  }
+  .latestpost-container .Category-container .cate:hover {
+    color: var(--color-orange);
+  }
+  .latestpost-container .Category-container .cate:hover span {
+    color: var(--color-green);
+  }
+  .latestpost-container .Category-container .cate span {
+    cursor: pointer;
+  }
+  .latestpost-container .Category-container .cate .icon {
+    font-size: 19px;
+    font-weight: 900;
+  }
+  .latestpost-container .needhelp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/a-images/writing.jpg");
+    background-size: cover;
+    position: relative;
+    gap: 20px;
+    padding: 30px;
+    color: white;
+  }
+  .latestpost-container .needhelp-container span,
+  p,
+  button {
+    z-index: 2;
+  }
+  .latestpost-container .needhelp-container span {
+    letter-spacing: 3px;
+    font-weight: 600;
+    transition: transform 0.9s ease-in-out;
+  }
+  .latestpost-container .needhelp-container p {
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    line-height: 1.5;
+    transition: transform 0.6s ease-in-out;
+  }
+  .latestpost-container .needhelp-container button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  .latestpost-container .needhelp-container::before {
+    content: "";
+    background-color: rgba(21, 19, 93, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  .latestpost-container .needhelp-container:hover::before {
+    background: rgba(21, 19, 93, 1);
+  }
+  .latestpost-container .needhelp-container:hover span {
+    transform: translateY(-20px);
+  }
+  .latestpost-container .needhelp-container:hover p {
+    transform: translateY(-20px);
+  }
+  .latestpost-container .needhelp-container:hover button {
+    transform: translateY(-20px);
+  }
+  
+  /* ---------------------For Mobile Devices ------------------- */
+  @media (max-width: 600px) {
+  
+    .latestpost-container h3 {
+      font-size: 25px;
+      text-align: center;
+  
+    }
+   
+  }

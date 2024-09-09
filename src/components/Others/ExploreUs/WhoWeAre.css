@@ -1,0 +1,104 @@
+.whoweare_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 40px 140px;
+  }
+  .whoweare_container .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .whoweare_container .left h4 {
+    color: var(--color-orange);
+  }
+  .whoweare_container .left h1 {
+    color: var(--color-violet);
+    font-size: 40px;
+  }
+  .whoweare_container .left p {
+    color: var(--color-violet);
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .whoweare_container .right {
+  
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    
+  }
+  .whoweare_container .right img {
+   
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+   
+  }
+  .whoweare_container .right .right-box {
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    bottom: 100px;
+    background-color: #fbf8ff;
+    left: 30px;
+    color: var(--color-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+  .whoweare_container .right .right-box h1 {
+    font-size: 60px;
+  }
+  .whoweare_container .right .right-box p {
+    font-size: 14px;
+  }
+  
+  /* --------------For mobile devices ----------------- */
+  
+  @media (max-width: 600px) {
+    .whoweare_container {
+      height: auto;
+      flex-direction: column;
+      gap: 100px;
+      padding: 50px 40px !important;
+    }
+    .whoweare_container .left {
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .whoweare_container .left h1 {
+      font-size: 30px;
+    }
+    .whoweare_container .left p {
+      font-size: 14px;
+    }
+    .whoweare_container .right {
+      width: 100%;
+      height: 65vh;
+    }
+    .whoweare_container .right img {
+      width: 100%;
+      height: 100%;
+    }
+    .whoweare_container .right .right-box {
+      height: 120px;
+      width: 170px;
+      bottom: -30px;
+      left: -20px;
+    }
+    .whoweare_container .right .right-box h1 {
+      font-size: 40px;
+    }
+  }
+  

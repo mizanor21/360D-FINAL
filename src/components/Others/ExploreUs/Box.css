@@ -1,0 +1,58 @@
+.ourvalue_box{
+    display: flex;
+    gap: 15px;
+    color: #ffffff;
+    
+    }
+    .ourvalue_box_logo_circle{
+        height: 50px;
+        width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #000F1A 0%, #000F1A 50%, #0077D5 100%);
+
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 24px;
+    }
+    .ourvalue_box_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+    }
+    .ourvalue_box_text h3{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .ourvalue_box_text p{
+        line-height: 1.5;
+    }
+
+    /* ---------------------For Mobile Device------------------ */
+    
+    @media (max-width:600px){
+        .ourvalue_box{
+            flex-direction: column;
+            align-items: center;
+            }
+         
+            .ourvalue_box_text{
+        
+
+            align-items: center;
+           
+            
+            }
+            .ourvalue_box_text h3{
+                font-size: 18px;
+            }
+            .ourvalue_box_text p{
+                font-size: 14px;
+                text-align: center;
+            }
+    }
