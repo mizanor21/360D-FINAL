@@ -102,7 +102,7 @@ const Navbar = () => {
 
         <ul className="absolute lg:left-[-750px] lg:w-[1530px] mt-10 hidden z-100 bg-gradient-to-r from-[#000F1A] via-[#0080E5] to-[#000F1A] text-black shadow-md rounded-md group-hover:block p-2">
           <div className="flex justify-center items-center gap-6 py-10">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
               <Link
                 to="/HR-Services"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -146,7 +146,7 @@ const Navbar = () => {
                   </h1>
                 </div>
               </Link>
-              <Link
+              {/* <Link
                 to="/Health-Tourism"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               >
@@ -159,7 +159,7 @@ const Navbar = () => {
                     Health Tourism
                   </h1>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </ul>
