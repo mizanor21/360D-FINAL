@@ -21,7 +21,7 @@ const ContactComponent = () => {
     },
     {
       t1: "Email Us",
-      t2: "info@lifeinnovior.org",
+      t2: "info@360dsoul.com",
       icon: <FaMailBulk />,
       underline: "4px solid var(--color-violet)",
       cursor: "pointer",
