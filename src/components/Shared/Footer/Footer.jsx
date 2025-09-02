@@ -207,13 +207,13 @@ const Footer = () => {
             >
               Career Counselling
             </Link>
-            <Link
+            {/* <Link
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               to="/Health-Tourism"
               className="link link-hover text-[#cdcdcd] text-[18px]"
             >
               Health Tourism
-            </Link>
+            </Link> */}
           </div>
         </nav>
 

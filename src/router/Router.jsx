@@ -64,10 +64,10 @@ const router = createBrowserRouter([
         path: "/Career-Counselling",
         element: <CareerCounciling></CareerCounciling>,
       },
-      {
-        path: "/Health-Tourism",
-        element: <HealthTourism />,
-      },
+      // {
+      //   path: "/Health-Tourism",
+      //   element: <HealthTourism />,
+      // },
     ],
   },
 ]);
